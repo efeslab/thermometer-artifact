@@ -1,0 +1,5 @@
+set(REPLACE_TYPE "PROB")
+set(CALCULATE_PROBABILITY "false")
+set(CLEAR_WHEN_EVICT "true")
+set(COUNTER_UPPER_BOUND "std::numeric_limits<uint64_t>::max()")
+set(UPDATE_WHEN_EVICT "false")

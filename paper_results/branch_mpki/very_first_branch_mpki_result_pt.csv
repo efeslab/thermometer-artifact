@@ -1,0 +1,10 @@
+Trace,LRU,Perfect-BTB,Perfect-BP,Perfect-I-Cache
+cassandra_result,3.80946,1.11236,2.80786,3.80946
+drupal_result,4.28198,1.8062,2.67498,4.28198
+finagle-chirper_result,6.4429,3.0322,3.49678,6.4429
+finagle-http_result,5.5415,2.5671,3.04728,5.5415
+kafka_result,4.0121,1.15504,3.02086,4.0121
+mediawiki_result,9.04118,6.36284,3.07522,9.04116
+tomcat_result,10.1953,3.9586,6.57868,10.1953
+verilator_result,62.49,0.14784,62.4674,62.4899
+wordpress_result,5.13904,2.17888,3.16474,5.13904

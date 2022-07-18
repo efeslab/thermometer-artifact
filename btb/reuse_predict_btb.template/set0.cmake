@@ -1,0 +1,3 @@
+set(CHECK_PREDICT_ACCURACY "false")
+set(PREDICT_CHECK_NUM "1")
+set(NOT_FOUND_RETURN_METHOD "NotFoundReturnMethod::RECENT")

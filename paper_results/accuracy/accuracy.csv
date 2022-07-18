@@ -1,0 +1,10 @@
+,Transient,Holistic,Thermometer
+cassandra_result,45.9553,48.4336,57.0349
+drupal_result,44.793,63.3453,69.943
+finagle-chirper_result,59.3664,58.0487,64.7006
+finagle-http_result,58.8978,56.2149,64.8684
+kafka_result,54.2933,53.5823,63.8339
+mediawiki_result,56.3586,61.1778,67.8372
+tomcat_result,33.2045,52.3951,49.8069
+verilator_result,47.0448,99.8589,99.8668
+wordpress_result,48.0126,62.4083,67.6922

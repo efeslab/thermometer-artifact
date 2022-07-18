@@ -1,0 +1,2 @@
+set(FRIENDLY_TYPE "ALL")
+set(CHANCE_UPPER "7")
