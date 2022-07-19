@@ -1,6 +1,6 @@
 <h1 align="center"> Thermometer </h1>
 
-Thermometer is a profile-guided BTB replacement policy.
+Thermometer is a profile-guided BTB replacement technique.
 
 Please cite the following paper if you use this artifact:
 ```
@@ -11,7 +11,7 @@ Please cite the following paper if you use this artifact:
   series = {ISCA 2022},
   year = {2022},
   video = {https://www.youtube.com/watch?v=YMqFlP0PtWw},
-  code = {https://github.com/efeslab/thermometer-ae-private-backup},
+  code = {https://github.com/efeslab/thermometer-artifact},
   month = jun,
 }
 ```
@@ -20,9 +20,9 @@ Please cite the following paper if you use this artifact:
 Thermometer is implemented in a trace-based simulator, [ChampSim](https://github.com/ChampSim/ChampSim).
 Clone the Thermometer repo with
 ```
-git clone git@github.com:efeslab/thermometer-ae-private-backup.git
+git clone git@github.com:efeslab/thermometer-artifact.git
 ```
-We use Intel Processor Trace to generate trace for 13 widely data center applications. The traces can be downloaded [here](https://drive.google.com/file/d/1tN8Jw1TcZ9CrDzDWK0HFUD-nVLhZDW9e/view).
+We use Intel Processor Trace to generate traces for widely-used data center applications. The traces can be downloaded from [here](https://drive.google.com/file/d/1tN8Jw1TcZ9CrDzDWK0HFUD-nVLhZDW9e/view).
 
 [//]: # (TODO: there are only 9 traces on the google drive)
 
@@ -30,7 +30,7 @@ We use Intel Processor Trace to generate trace for 13 widely data center applica
 
 ## Dependency
 
-First, you should make sure that a C++ compiler (with C++17 support), `cmake` and `boost-filesystem` are installed. 
+First, you should make sure that a C++ compiler (with C++17 support), `cmake`, and `boost-filesystem` are installed. 
 Python 3 is required to install the dependency below, as well as to run the scripts. 
 
 The project also requires `intelxed` as a dependency. You can install it by
@@ -99,6 +99,7 @@ For some experimental setups, the corresponding executable names can be found ac
 ## Run Experiments
 Use the following script to run most experiments
 ```bash
+run_test.py
 ```
 Use the following script to generate result summary from raw data
 ```bash
@@ -186,5 +187,5 @@ python3 plots/scripts/plot_accuracy.py
 # Note
 Some paths are hard-coded in the implementation and scripts, feel free to replace them with what you needed.
 Most result data and plots are already included in this repo.
-If you have any problems (e.g. scripts do not work. some results cannot be generated), feel free to contact us.
+If you have any problems (e.g., scripts do not work. some results cannot be generated), feel free to contact us.
 
