@@ -2,7 +2,7 @@
 
 Thermometer is a profile-guided BTB replacement technique.
 
-Please cite the following paper if you use this artifact:
+Please cite the following [paper](https://web.eecs.umich.edu/~takh/papers/song-thermometer-isca-2022.pdf) if you use this artifact:
 ```
 @inproceedings{song-thermometer-isca-2022,
   author = {Song, Shixin and Khan, Tanvir Ahmed and Mahdizadeh Shahri, Sara and Sriraman, Akshitha and Soundararajan, Niranjan K and Subramoney, Sreenivas and Jim{\'e}nez, Daniel A and Litz, Heiner and Kasikci, Baris},
