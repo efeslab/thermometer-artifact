@@ -130,5 +130,5 @@ foreach (CMAKE_CONFIG ${CMAKE_CONFIGS})
     endforeach ()
 endforeach ()
 
-add_executable(pt_trace_parser pt_trace_parser/main.cpp pt_trace_parser/trace_reader.h)
-target_link_libraries(pt_trace_parser ${Boost_LIBRARIES} xed z)
+# add_executable(pt_trace_parser pt_trace_parser/main.cpp pt_trace_parser/trace_reader.h)
+# target_link_libraries(pt_trace_parser ${Boost_LIBRARIES} xed z)
