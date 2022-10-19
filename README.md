@@ -24,6 +24,8 @@ git clone git@github.com:efeslab/thermometer-artifact.git
 ```
 We use Intel Processor Trace to generate traces for widely-used data center applications. The traces can be downloaded from [here](https://drive.google.com/file/d/1tN8Jw1TcZ9CrDzDWK0HFUD-nVLhZDW9e/view).
 
+**Update: We also released traces of four more apps [here](https://drive.google.com/file/d/1RJYNbMR4G3m40ZiaflJ2Ox_DFB8vsgWv/view?usp=sharing)**
+
 [//]: # (TODO: there are only 9 traces on the google drive)
 
 # Compile
