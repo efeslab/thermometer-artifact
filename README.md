@@ -116,22 +116,22 @@ First, run experiments using the script `run_test.py`.
 # LRU, SRRIP, GHRP, Hawkeye
 # Perfect BTB, Perfect Branch Prediction, Perfect I-Cache
 # LRU + Confluence, LRU + Shotgun
-python3 run_test.py --trace-type=pt --total-btb-ways=4 --run-list=ChampSim_fdip_lru,ChampSim_fdip_srrip,ChampSim_fdip_ghrp,ChampSim_fdip_hawkeye,ChampSim_fdip_perfect_btb,ChampSim_fdip_perfect_bp,ChampSim_icache_lru,ChampSim_fdip_predecoder_btb_lru,ChampSim_fdip_shotgun_lru
+python3 run_test.py --trace-type=pt --total-btb-ways=4 --run-list=ChampSim_fdip_lru,ChampSim_fdip_srrip,ChampSim_fdip_ghrp,ChampSim_fdip_hawkeye,ChampSim_fdip_perfect_btb,ChampSim_fdip_perfect_bp,ChampSim_icache_lru,ChampSim_fdip_predecoder_btb_lru,ChampSim_fdip_shotgun_lru --app-list=cassandra,clang,drupal,finagle-chirper,finagle-http,kafka,mediawiki,mysqllarge,pgbench,python,tomcat,verilator,wordpress
 # Optimal Replacement,
 # Optimal Replacement + Confluence, Optimal Replacement + Shotgun
-python3 run_test.py --trace-type=pt --generate=True --total-btb-ways=4 --run-list=ChampSim_fdip_opt,ChampSim_fdip_predecoder_btb_opt,ChampSim_fdip_shotgun_opt
+python3 run_test.py --trace-type=pt --generate=True --total-btb-ways=4 --run-list=ChampSim_fdip_opt,ChampSim_fdip_predecoder_btb_opt,ChampSim_fdip_shotgun_opt --app-list=cassandra,clang,drupal,finagle-chirper,finagle-http,kafka,mediawiki,mysqllarge,pgbench,python,tomcat,verilator,wordpress
 # Thermometer, Thermometer (holistic information only)
 # Thermometer + Confluence, Thermometer + Shotgun
-python3 run_test.py --trace-type=pt --total-btb-ways=4 --run-list=ChampSim_fdip_hot_warm_cold_80_50_f_keep_curr_hotter_lru,ChampSim_fdip_hwc_50_80_f_keep_curr_hotter,ChampSim_fdip_predecoder_btb_hot_warm_cold_80_50_f_keep_curr_hotter_lru,ChampSim_fdip_shotgun_hot_warm_cold_80_50_f_keep_curr_hotter_lru
+python3 run_test.py --trace-type=pt --total-btb-ways=4 --run-list=ChampSim_fdip_hot_warm_cold_80_50_f_keep_curr_hotter_lru,ChampSim_fdip_hwc_50_80_f_keep_curr_hotter,ChampSim_fdip_predecoder_btb_hot_warm_cold_80_50_f_keep_curr_hotter_lru,ChampSim_fdip_shotgun_hot_warm_cold_80_50_f_keep_curr_hotter_lru --app-list=cassandra,clang,drupal,finagle-chirper,finagle-http,kafka,mediawiki,mysqllarge,pgbench,python,tomcat,verilator,wordpress
 # Optimal Replacement and Thermometer on BTB with 7979 entry
-python3 run_test.py --trace-type=pt --generate=True --total-btb-ways=4 --total-btb-entries=7979 --run-list=ChampSim_fdip_opt
-python3 run_test.py --trace-type=pt --total-btb-ways=4 --total-btb-entries=7979 --run-list=ChampSim_fdip_hot_warm_cold_80_50_f_keep_curr_hotter_lru
+python3 run_test.py --trace-type=pt --generate=True --total-btb-ways=4 --total-btb-entries=7979 --run-list=ChampSim_fdip_opt --app-list=cassandra,clang,drupal,finagle-chirper,finagle-http,kafka,mediawiki,mysqllarge,pgbench,python,tomcat,verilator,wordpress
+python3 run_test.py --trace-type=pt --total-btb-ways=4 --total-btb-entries=7979 --run-list=ChampSim_fdip_hot_warm_cold_80_50_f_keep_curr_hotter_lru --app-list=cassandra,clang,drupal,finagle-chirper,finagle-http,kafka,mediawiki,mysqllarge,pgbench,python,tomcat,verilator,wordpress
 # Twig
-#python3 run_test.py --trace-type=pt --total-btb-ways=4 --total-btb-entries=8 --run-list=ChampSim_fdip_lru --twig-profile=True
+#python3 run_test.py --trace-type=pt --total-btb-ways=4 --total-btb-entries=8 --run-list=ChampSim_fdip_lru --twig-profile=True --app-list=cassandra,clang,drupal,finagle-chirper,finagle-http,kafka,mediawiki,mysqllarge,pgbench,python,tomcat,verilator,wordpress
 ## TODO: One step of generating Twig result is missing
 #python3 run_test.py --trace-type=pt --total-btb-ways=4 --total-btb-entries=8 --run-list=ChampSim_fdip_lru,ChampSim_fdip_srrip --use-twig-prefetch=True
-#python3 run_test.py --trace-type=pt --total-btb-ways=4 --total-btb-entries=8 --run-list=ChampSim_fdip_opt --use-twig-prefetch=True
-#python3 run_test.py --trace-type=pt --total-btb-ways=4 --total-btb-entries=8 --run-list=ChampSim_fdip_hot_warm_cold_80_50_f_keep_curr_hotter_lru --use-twig-prefetch=True
+#python3 run_test.py --trace-type=pt --total-btb-ways=4 --total-btb-entries=8 --run-list=ChampSim_fdip_opt --use-twig-prefetch=True --app-list=cassandra,clang,drupal,finagle-chirper,finagle-http,kafka,mediawiki,mysqllarge,pgbench,python,tomcat,verilator,wordpress
+#python3 run_test.py --trace-type=pt --total-btb-ways=4 --total-btb-entries=8 --run-list=ChampSim_fdip_hot_warm_cold_80_50_f_keep_curr_hotter_lru --use-twig-prefetch=True --app-list=cassandra,clang,drupal,finagle-chirper,finagle-http,kafka,mediawiki,mysqllarge,pgbench,python,tomcat,verilator,wordpress
 ```
 Second, generate result summary using the script `generate_result.py`.
 ```bash
